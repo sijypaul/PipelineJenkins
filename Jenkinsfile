@@ -7,19 +7,21 @@ pipeline
      stage ('Compile') 
      {
            steps {
-                   javac Hello.java
+                    echo "Compiling......."
+                    javac Hello.java;
                  }
      }
      stage ('Test') 
      {
            steps {
-                   java Hello
+                   echo "Testing......."
+                   java Hello;
                  }
      }
      stage ('Deploy') 
      {
            steps {
-                   echo "Deploy App"
+                   echo "Deploying......"
                  }
      }
   }
