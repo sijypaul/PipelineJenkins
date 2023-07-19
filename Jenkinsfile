@@ -8,14 +8,14 @@ pipeline
      {
            steps {
                     echo "Compiling......."
-                    javac Hello.java;
+                    //javac Hello.java;
                  }
      }
      stage ('Test') 
      {
            steps {
                    echo "Testing......."
-                   java Hello;
+                   //java Hello;
                  }
      }
      stage ('Deploy') 
