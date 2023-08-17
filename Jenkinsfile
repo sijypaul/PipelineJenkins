@@ -4,6 +4,13 @@ pipeline
 
   stages 
   {
+    stage('Build') 
+        {
+            steps 
+            {
+               git branch: 'main', url: 'https://github.com/sijypaul/PipelineJenkins.git'
+            }
+        }
      stage ('Compile') 
      {
            steps {
