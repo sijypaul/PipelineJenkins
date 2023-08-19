@@ -7,14 +7,14 @@ pipeline
      {
            steps {
                     echo "Compiling......."
-                    //bat 'javac Hello.java'
+                    bat 'javac Hello.java'
                  }
      }
      stage ('Test') 
      {
            steps {
                    echo "Testing......."
-                   //bat 'java Hello'
+                   bat 'java Hello'
                  }
      }
      stage ('Deploy') 
